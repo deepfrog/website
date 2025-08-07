@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Container, Typography, Card, CardContent, List, ListItem, ListItemIcon, ListItemText, Button } from '@mui/material';
-import { Check as CheckIcon, Launch as LaunchIcon } from '@mui/icons-material';
+import { Box, Container, Typography, Card, CardContent, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { Check as CheckIcon } from '@mui/icons-material';
 
 interface CoreFeature {
   icon: React.ReactNode;
