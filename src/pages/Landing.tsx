@@ -42,7 +42,6 @@ const Landing: React.FC = () => {
       description: 'Make your data speak with our intelligent dashboard platform. Transform raw data into actionable insights with AI-powered analytics and real-time visualizations.',
       highlights: ['AI-powered analytics', 'Real-time dashboards', 'Multi-datasource support', 'Natural language queries'],
       color: '#0f766e',
-      link: 'https://frognosis.deepfrog.ai',
     },
     {
       icon: <CareerIcon sx={{ fontSize: 40, color: '#3b82f6' }} />,

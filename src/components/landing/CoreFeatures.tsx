@@ -78,7 +78,7 @@ const CoreFeatures: React.FC<CoreFeaturesProps> = ({ coreFeatures }) => {
                 </List>
                 
                 {/* Link Button for Frognosis */}
-                {feature.link && (
+                {/* {feature.link && (
                   <Box sx={{ mt: 3, pt: 2, borderTop: '1px solid #e5e7eb', display: 'flex', justifyContent: 'center' }}>
                     <Button
                       variant="outlined"
@@ -97,7 +97,7 @@ const CoreFeatures: React.FC<CoreFeaturesProps> = ({ coreFeatures }) => {
                       Visit Platform
                     </Button>
                   </Box>
-                )}
+                )} */}
               </CardContent>
             </Card>
           ))}
