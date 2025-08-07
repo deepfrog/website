@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Container, Typography, Button, Link, IconButton } from '@mui/material';
+import { Box, Container, Button, Link, IconButton } from '@mui/material';
 import { Menu as MenuIcon, Close as CloseIcon, Dashboard as DashboardIcon } from '@mui/icons-material';
 
 interface HeaderProps {

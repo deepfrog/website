@@ -10,10 +10,9 @@ import {
   Snackbar,
   FormControlLabel,
   Checkbox,
-  Link,
-  Paper
+  Link
 } from '@mui/material';
-import { ArrowForward, Dashboard as DashboardIcon, Email as EmailIcon } from '@mui/icons-material';
+import { ArrowForward, Dashboard as DashboardIcon } from '@mui/icons-material';
 import { saveDemoRequest } from '../../utils/emailService';
 
 interface CTAProps {

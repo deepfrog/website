@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Container, Typography, Button, Chip, Paper, Stack } from '@mui/material';
-import { ArrowForward, Psychology as AIIcon } from '@mui/icons-material';
+import { ArrowForward } from '@mui/icons-material';
 
 interface HeroFeature {
   icon: React.ReactNode;

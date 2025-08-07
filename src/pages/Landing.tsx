@@ -3,13 +3,6 @@ import { Box } from '@mui/material';
 import {
   Dashboard as DashboardIcon,
   Analytics as AnalyticsIcon,
-  Storage as StorageIcon,
-  QuestionAnswer as AskMeIcon,
-  Api as ApiIcon,
-  Lightbulb as KnowledgeIcon,
-  AccountTree as RelationshipIcon,
-  QueryStats as QueryIcon,
-  Psychology as AIIcon,
   Cloud as CloudIcon,
   Bolt as BoltIcon,
   Shield as ShieldIcon,
@@ -30,19 +23,11 @@ import CoreFeatures from '../components/landing/CoreFeatures';
 import EnterpriseFeatures from '../components/landing/EnterpriseFeatures';
 import Partners from '../components/landing/Partners';
 import AboutUs from '../components/landing/AboutUs';
-import Pricing from '../components/landing/Pricing';
 import CTA from '../components/landing/CTA';
 import Footer from '../components/landing/Footer';
 
 const Landing: React.FC = () => {
   const navigate = useNavigate();
-
-  const getPricingButton = (defaultText: string, authenticatedText: string) => {
-    return {
-      text: defaultText,
-      action: () => navigate('/signup'),
-    };
-  };
 
   const heroFeatures = [
     { icon: <HealthIcon />, text: 'Healthcare' },

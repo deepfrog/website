@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography, Grid, Card, CardContent } from '@mui/material';
+import { Box, Container, Typography, Card, CardContent } from '@mui/material';
 import {
   Business as BusinessIcon,
   Lightbulb as InnovationIcon,
