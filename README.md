@@ -1,46 +1,141 @@
-# Getting Started with Create React App
+# DeepFrog Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive landing page for DeepFrog - a product development company specializing in healthcare, logistics, and fintech sectors.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Modern Design**: Clean, professional UI with Material-UI components
+- **Responsive**: Works perfectly on desktop, tablet, and mobile devices
+- **Interactive**: Smooth scrolling navigation and hover effects
+- **Brand Integration**: Custom DeepFrog branding and logo
+- **Email Capture**: Demo booking functionality with email validation
+- **Product Showcase**: Detailed sections for Frognosis, Pangents, and DecentAI
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React 18** with TypeScript
+- **Material-UI v5** for UI components
+- **React Router DOM** for navigation
+- **CSS Grid & Flexbox** for responsive layouts
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd deepfrog-landing-page
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+3. Start the development server:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Build for production:
+```bash
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Railway Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project is configured for easy deployment on Railway.com:
 
-### `npm run eject`
+### Automatic Deployment
+1. Connect your GitHub repository to Railway
+2. Railway will automatically detect the React app
+3. The build process will run automatically
+4. Your site will be deployed and accessible via Railway's URL
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Manual Deployment
+1. Install Railway CLI: `npm i -g @railway/cli`
+2. Login: `railway login`
+3. Initialize: `railway init`
+4. Deploy: `railway up`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Environment Variables
+No environment variables are required for basic deployment. The app works as a static site.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📁 Project Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+src/
+├── components/
+│   └── landing/          # Landing page components
+│       ├── Header.tsx    # Navigation header
+│       ├── Hero.tsx      # Hero section
+│       ├── Stats.tsx     # Statistics section
+│       ├── CoreFeatures.tsx  # Products showcase
+│       ├── Partners.tsx  # Partners section
+│       ├── AboutUs.tsx   # About section
+│       ├── CTA.tsx       # Call-to-action
+│       └── Footer.tsx    # Footer
+├── utils/
+│   └── emailService.ts   # Email service utilities
+├── pages/
+│   └── Landing.tsx       # Main landing page
+└── App.tsx               # App root component
+```
 
-## Learn More
+## 🎨 Customization
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Colors
+The primary brand color is `#0f766e` (teal). Update this in components to match your brand.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Content
+- Update product information in `src/pages/Landing.tsx`
+- Modify partner logos in the `partners` array
+- Update contact information in the Footer component
+
+### Images
+- Place logo images in the `public/` folder
+- Update image paths in the components
+
+## 📧 Email Integration
+
+The demo booking form currently logs email requests to the console. To integrate with real email services:
+
+1. Update `src/utils/emailService.ts`
+2. Add your email service API keys as environment variables
+3. Implement actual email sending logic
+
+## 🔧 Development
+
+### Available Scripts
+- `npm start` - Start development server
+- `npm run build` - Build for production
+- `npm test` - Run tests
+- `npm run eject` - Eject from Create React App
+
+### Code Style
+- TypeScript for type safety
+- Material-UI for consistent styling
+- Functional components with hooks
+- Responsive design principles
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📄 License
+
+This project is proprietary to DeepFrog.
+
+## 🆘 Support
+
+For support or questions, contact the DeepFrog development team.
