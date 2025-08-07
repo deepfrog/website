@@ -83,7 +83,7 @@ const Landing: React.FC = () => {
   ];
 
   const stats = [
-    { number: '50+', label: 'Enterprise Clients', icon: <BusinessIcon /> },
+    { number: '5+', label: 'Enterprise Clients', icon: <BusinessIcon /> },
     { number: '3', label: 'Core Products', icon: <DashboardIcon /> },
     { number: '99.9%', label: 'Uptime SLA', icon: <ShieldIcon /> },
     { number: '40%', label: 'Efficiency Gain', icon: <BoltIcon /> },
