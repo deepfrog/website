@@ -100,10 +100,10 @@ const Landing: React.FC = () => {
       <Header isAuthenticated={false} navigate={navigate} />
       <Hero isAuthenticated={false} navigate={navigate} heroFeatures={heroFeatures} />
       <Stats stats={stats} />
+      <AboutUs />
       <CoreFeatures coreFeatures={coreFeatures} />
       <EnterpriseFeatures enterpriseFeatures={enterpriseFeatures} />
       <Partners partners={partners} />
-      <AboutUs />
       {/* <Pricing isAuthenticated={false} getPricingButton={getPricingButton} /> */}
       <CTA isAuthenticated={false} navigate={navigate} />
       <Footer />
