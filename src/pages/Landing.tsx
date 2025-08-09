@@ -12,7 +12,6 @@ import {
   HealthAndSafety as HealthIcon,
   LocalShipping as LogisticsIcon,
   AccountBalance as FintechIcon,
-  Work as CareerIcon,
   AccountTree as BlockchainIcon,
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
@@ -21,7 +20,7 @@ import Hero from '../components/landing/Hero';
 import Stats from '../components/landing/Stats';
 import CoreFeatures from '../components/landing/CoreFeatures';
 import EnterpriseFeatures from '../components/landing/EnterpriseFeatures';
-import Partners from '../components/landing/Partners';
+// import Partners from '../components/landing/Partners';
 import AboutUs from '../components/landing/AboutUs';
 import CTA from '../components/landing/CTA';
 import Footer from '../components/landing/Footer';
@@ -106,10 +105,10 @@ const Landing: React.FC = () => {
     { number: '40%', label: 'Efficiency Gain', icon: <BoltIcon /> },
   ];
 
-  const partners = [
-    { name: 'Ultraship TMS', logo: 'U', sector: 'Logistics', image: '/image1.png' },
-    { name: 'Shine Logistics Inc', logo: 'S', sector: 'Logistics', image: '/image2.png' },
-  ];
+  // const partners = [
+  //   { name: 'Ultraship TMS', logo: 'U', sector: 'Logistics', image: '/image1.png' },
+  //   { name: 'Shine Logistics Inc', logo: 'S', sector: 'Logistics', image: '/image2.png' },
+  // ];
 
   return (
     <Box sx={{ bgcolor: '#ffffff', minHeight: '100vh' }}>
