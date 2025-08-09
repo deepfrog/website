@@ -39,8 +39,8 @@ const AboutUs: React.FC = () => {
             About DeepFrog
           </Typography>
           <Typography variant="h6" sx={{ color: '#6b7280', maxWidth: 800, mx: 'auto', lineHeight: 1.6 }}>
-            We are a product development company specializing in healthcare, logistics, and fintech sectors. 
-            Our mission is to transform industries through intelligent, AI-powered solutions that drive innovation and efficiency.
+            We are a product development company specializing in logistics. 
+            Our mission is to transform freight and supply chains through intelligent, AI-powered solutions that drive innovation and efficiency.
           </Typography>
         </Box>
 
@@ -67,8 +67,7 @@ const AboutUs: React.FC = () => {
                 not only solve immediate problems but also create long-term competitive advantages.
               </Typography>
               <Typography variant="body1" sx={{ color: '#6b7280', lineHeight: 1.6 }}>
-                From healthcare providers improving patient outcomes to logistics companies optimizing supply chains, 
-                and fintech firms securing financial transactions, we're proud to be part of our clients' success stories.
+                From shippers optimizing planning to carriers improving utilization and on-time performance, we're proud to be part of our clients' success stories.
               </Typography>
             </Box>
             <Box sx={{ 

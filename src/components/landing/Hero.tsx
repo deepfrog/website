@@ -40,8 +40,8 @@ const Hero: React.FC<HeroProps> = ({ isAuthenticated, navigate, heroFeatures }) 
               </Box>
             </Typography>
             <Typography variant="h6" sx={{ color: '#6b7280', mb: 4, lineHeight: 1.6 }}>
-              DeepFrog is a product development company specializing in logistics, fintech and healthcare. 
-              We build intelligent platforms that drive innovation and efficiency across industries.
+              DeepFrog is a product development company specializing in logistics. 
+              We build intelligent platforms that drive innovation and efficiency for freight and supply chains.
             </Typography>
             <Stack direction="row" spacing={2} sx={{ mb: 4, flexWrap: 'wrap', gap: 1 }}>
               {heroFeatures.map((feature, index) => (

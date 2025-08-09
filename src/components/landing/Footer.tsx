@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
               </Typography>
             </Box>
             <Typography variant="body2" sx={{ color: '#9ca3af', mb: 3, maxWidth: 300 }}>
-              A product development company specializing in healthcare, logistics, and fintech. We build intelligent solutions that drive innovation and efficiency.
+              A product development company specializing in logistics. We build intelligent solutions that drive innovation and efficiency.
             </Typography>
           </Box>
           <Box>
@@ -53,17 +53,11 @@ const Footer: React.FC = () => {
           </Box>
           <Box>
             <Typography variant="h6" sx={{ fontWeight: 'bold', color: '#ffffff', mb: 3 }}>
-              Sectors
+              Sector
             </Typography>
             <Stack spacing={1}>
-              <Typography variant="body2" sx={{ color: '#9ca3af', cursor: 'pointer', '&:hover': { color: '#ffffff' } }}>
-                Healthcare
-              </Typography>
-              <Typography variant="body2" sx={{ color: '#9ca3af', cursor: 'pointer', '&:hover': { color: '#ffffff' } }}>
+              <Typography variant="body2" sx={{ color: '#9ca3af', cursor: 'default' }}>
                 Logistics
-              </Typography>
-              <Typography variant="body2" sx={{ color: '#9ca3af', cursor: 'pointer', '&:hover': { color: '#ffffff' } }}>
-                Fintech
               </Typography>
             </Stack>
           </Box>

@@ -17,10 +17,10 @@ const Partners: React.FC<PartnersProps> = ({ partners }) => {
     <Box id="partners" sx={{ py: 8, bgcolor: '#ffffff' }}>
       <Container maxWidth="lg">
         <Typography variant="h3" sx={{ textAlign: 'center', fontWeight: 'bold', color: '#111827', mb: 2 }}>
-          Trusted by Industry Leaders
+          Trusted by Logistics Leaders
         </Typography>
         <Typography variant="h6" sx={{ textAlign: 'center', color: '#6b7280', mb: 6, maxWidth: 600, mx: 'auto' }}>
-          Partnering with leading organizations across healthcare, logistics, and fintech sectors
+          Partnering with leading organizations across logistics and supply chain
         </Typography>
         <Box sx={{ 
           display: 'flex', 

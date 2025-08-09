@@ -16,10 +16,10 @@ const EnterpriseFeatures: React.FC<EnterpriseFeaturesProps> = ({ enterpriseFeatu
     <Box id="sectors" sx={{ py: 8, bgcolor: '#ffffff' }}>
       <Container maxWidth="lg">
         <Typography variant="h3" sx={{ textAlign: 'center', fontWeight: 'bold', color: '#111827', mb: 2 }}>
-          Industry Expertise
+          Logistics Expertise
         </Typography>
         <Typography variant="h6" sx={{ textAlign: 'center', color: '#6b7280', mb: 6, maxWidth: 600, mx: 'auto' }}>
-          Specialized solutions for healthcare, logistics, and fintech sectors with deep industry knowledge
+          Specialized solutions for logistics with deep domain knowledge across freight, carriers, and operations
         </Typography>
         <Box sx={{ 
           display: 'grid', 

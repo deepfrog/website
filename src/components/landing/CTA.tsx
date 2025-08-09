@@ -106,7 +106,7 @@ const CTA: React.FC<CTAProps> = ({ navigate }) => {
               Ready to Transform Your Industry?
             </Typography>
             <Typography variant="h6" sx={{ color: '#e0f2fe', mb: 4, fontWeight: 400 }}>
-              Join leading companies in healthcare, logistics, and fintech using DeepFrog solutions
+              Join leading logistics companies using DeepFrog solutions
             </Typography>
             
             {isAuthenticated ? (

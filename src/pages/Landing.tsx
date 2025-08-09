@@ -9,9 +9,7 @@ import {
   Group as GroupIcon,
   AutoAwesome as AutoAwesomeIcon,
   Business as BusinessIcon,
-  HealthAndSafety as HealthIcon,
   LocalShipping as LogisticsIcon,
-  AccountBalance as FintechIcon,
   AccountTree as BlockchainIcon,
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
@@ -29,9 +27,7 @@ const Landing: React.FC = () => {
   const navigate = useNavigate();
 
   const heroFeatures = [
-    { icon: <HealthIcon />, text: 'Healthcare' },
     { icon: <LogisticsIcon />, text: 'Logistics' },
-    { icon: <FintechIcon />, text: 'Fintech' },
   ];
 
   const coreFeatures = [
@@ -84,7 +80,7 @@ const Landing: React.FC = () => {
     {
       icon: <ShieldIcon />,
       title: 'Industry Specific LLMs',
-      description: 'Domain-tuned LLMs for healthcare, logistics, and fintech that deliver accurate, compliant, and context-aware responses.',
+      description: 'Domain-tuned LLMs for logistics that deliver accurate, compliant, and context-aware responses.',
     },
     {
       icon: <CloudIcon />,

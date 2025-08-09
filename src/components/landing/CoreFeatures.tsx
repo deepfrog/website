@@ -23,7 +23,7 @@ const CoreFeatures: React.FC<CoreFeaturesProps> = ({ coreFeatures }) => {
           Our Products & Solutions
         </Typography>
         <Typography variant="h6" sx={{ textAlign: 'center', color: '#6b7280', mb: 6, maxWidth: 800, mx: 'auto' }}>
-          Built for outcomes: accelerate decisions, automate workflows, and deploy trustworthy AI across logistics, fintech & healthcare.
+          Built for outcomes: accelerate decisions, automate workflows, and deploy trustworthy AI for logistics.
         </Typography>
         <Box sx={{ 
           display: 'grid', 
