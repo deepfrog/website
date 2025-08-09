@@ -38,23 +38,40 @@ const Landing: React.FC = () => {
   const coreFeatures = [
     {
       icon: <AnalyticsIcon sx={{ fontSize: 40, color: '#0f766e' }} />,
-      title: 'Frognosis - Data Intelligence',
-      description: 'Make your data speak with our intelligent dashboard platform. Transform raw data into actionable insights with AI-powered analytics and real-time visualizations.',
-      highlights: ['AI-powered analytics', 'Real-time dashboards', 'Multi-datasource support', 'Natural language queries'],
+      title: 'Frognosis — AI Data Intelligence',
+      description: 'Unify metrics, detect anomalies, and ask questions in natural language across all your data sources — in real time.',
+      highlights: [
+        'Auto-generated dashboards',
+        'Anomaly detection & forecasting',
+        'Natural-language queries (NLQ)',
+        'Connectors for DBs, APIs, files'
+      ],
       color: '#0f766e',
     },
     {
-      icon: <CareerIcon sx={{ fontSize: 40, color: '#3b82f6' }} />,
-      title: 'Pangents - Lead & Career Vetting',
-      description: 'Automate your lead generation and career vetting processes with intelligent screening and verification systems.',
-      highlights: ['Automated vetting', 'Lead scoring', 'Background verification', 'Career assessment'],
+      icon: <LogisticsIcon sx={{ fontSize: 40, color: '#3b82f6' }} />,
+      title: 'Pangents — Logistics Lead-to-Cash',
+      description: 'From lead identification and carrier vetting to deal closure, shipment tracking, and invoice finalization — with voice agents that negotiate and close with carriers to boost efficiency.',
+      highlights: [
+        'Lead identification & enrichment',
+        'Carrier vetting & compliance',
+        'AI voice agents for deal closure',
+        'Shipment tracking & exceptions',
+        'Invoice reconciliation & finalization',
+        'Cut cycle time by 40% and reduce manual calls by 60%'
+      ],
       color: '#3b82f6',
     },
     {
       icon: <BlockchainIcon sx={{ fontSize: 40, color: '#10b981' }} />,
-      title: 'DecentAI - Decentralized AI Platform',
-      description: 'End-to-end workflow automation with blockchain security. Secure, transparent, and efficient AI-powered solutions.',
-      highlights: ['Blockchain security', 'Workflow automation', 'Decentralized processing', 'Smart contracts'],
+      title: 'DecentAI — Decentralized AI Orchestration',
+      description: 'Orchestrate secure AI workflows and agents with on-chain auditability and policy-based access controls.',
+      highlights: [
+        'Agent & workflow orchestration',
+        'On-chain audit trail',
+        'Policy-based access control',
+        'Smart-contract automations'
+      ],
       color: '#10b981',
     },
   ];
@@ -62,23 +79,23 @@ const Landing: React.FC = () => {
   const enterpriseFeatures = [
     {
       icon: <GroupIcon />,
-      title: 'Multi-Tenant Solutions',
-      description: 'Enterprise-grade multi-tenant architecture with organization-based access control and user management.',
+      title: 'Supply Chain Optimization',
+      description: 'End-to-end optimization across planning, procurement, logistics, and fulfillment using data-driven automation and predictive insights.',
     },
     {
       icon: <ShieldIcon />,
-      title: 'Industry Compliance',
-      description: 'Built-in compliance for healthcare (HIPAA), finance (PCI-DSS), and logistics (ISO) standards.',
+      title: 'Industry Specific LLMs',
+      description: 'Domain-tuned LLMs for healthcare, logistics, and fintech that deliver accurate, compliant, and context-aware responses.',
     },
     {
       icon: <CloudIcon />,
-      title: 'Cloud-Native Platform',
-      description: 'Built for the cloud with auto-scaling, high availability, and enterprise-grade reliability.',
+      title: 'Cloud Native Platform',
+      description: 'Scalable, resilient, and secure by design with autoscaling, high availability, and multi-tenant controls.',
     },
     {
       icon: <AutoAwesomeIcon />,
-      title: 'AI-Powered Intelligence',
-      description: 'Every solution powered by AI - from data analytics to process automation and predictive insights.',
+      title: 'AI Agents Eco System',
+      description: 'Composable AI agents that coordinate tasks, integrate with your tools and data, and automate complex workflows safely.',
     },
   ];
 
@@ -102,7 +119,7 @@ const Landing: React.FC = () => {
       <AboutUs />
       <CoreFeatures coreFeatures={coreFeatures} />
       <EnterpriseFeatures enterpriseFeatures={enterpriseFeatures} />
-      <Partners partners={partners} />
+      {/* <Partners partners={partners} /> */}
       {/* <Pricing isAuthenticated={false} getPricingButton={getPricingButton} /> */}
       <CTA isAuthenticated={false} navigate={navigate} />
       <Footer />

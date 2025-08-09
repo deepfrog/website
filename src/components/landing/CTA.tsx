@@ -150,12 +150,13 @@ const CTA: React.FC<CTAProps> = ({ navigate }) => {
                 </Button>
               </Stack>
             ) : (
-              <Box sx={{ maxWidth: 600, mx: 'auto' }}>
+              <Box sx={{ maxWidth: 720, mx: 'auto', px: 2 }}>
                 {/* Email Input and Button Container */}
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 2, 
                   mb: 3,
+                  alignItems: { xs: 'stretch', sm: 'center' },
                   flexDirection: { xs: 'column', sm: 'row' }
                 }}>
                   <TextField
@@ -167,6 +168,7 @@ const CTA: React.FC<CTAProps> = ({ navigate }) => {
                     error={!!emailError}
                     sx={{ 
                       '& .MuiOutlinedInput-root': { 
+                        height: 56,
                         borderRadius: 2,
                         bgcolor: 'white',
                         '&:hover fieldset': {
@@ -191,8 +193,8 @@ const CTA: React.FC<CTAProps> = ({ navigate }) => {
                     sx={{
                       bgcolor: '#ffffff',
                       color: '#0f766e',
-                      px: 4,
-                      py: 1.5,
+                      px: { xs: 2.5, sm: 4 },
+                      height: 56,
                       borderRadius: 2,
                       fontWeight: 600,
                       minWidth: { xs: '100%', sm: 'auto' },
@@ -212,7 +214,7 @@ const CTA: React.FC<CTAProps> = ({ navigate }) => {
                 )}
 
                 {/* Consent Checkbox */}
-                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                   <FormControlLabel
                     control={
                       <Checkbox
@@ -228,7 +230,7 @@ const CTA: React.FC<CTAProps> = ({ navigate }) => {
                       />
                     }
                     label={
-                      <Typography variant="body2" sx={{ color: '#e0f2fe', mt: 0 }}>
+                      <Typography variant="body2" sx={{ color: '#e0f2fe', mt: 0, textAlign: 'center', maxWidth: 720 }}>
                         By submitting, you consent to being contacted about our products per our{' '}
                         <Link href="#" sx={{ color: '#ffffff', textDecoration: 'underline' }}>
                           Privacy Policy
@@ -242,7 +244,7 @@ const CTA: React.FC<CTAProps> = ({ navigate }) => {
                     }
                     sx={{ 
                       mt: 0,
-                      alignItems: 'flex-start',
+                      alignItems: 'center',
                       '& .MuiFormControlLabel-label': {
                         mt: 0,
                       }

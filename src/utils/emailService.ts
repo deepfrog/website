@@ -30,19 +30,18 @@ export const sendEmail = async (emailData: {
 
 export const saveDemoRequest = async (email: string) => {
   try {
-    // For now, we'll just log the demo request
-    // In production, you can save to a database or send to your CRM
-    console.log('Demo request received:', { email, timestamp: new Date().toISOString() });
-    
-    // Example integration with database/CRM:
-    // const response = await fetch('/api/save-demo-request', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ email, timestamp: new Date().toISOString() })
-    // });
-    
-    // For demo purposes, we'll simulate success
-    return { success: true, message: 'Demo request saved successfully' };
+    const response = await fetch('/api/save-demo-request', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, timestamp: new Date().toISOString() })
+    });
+
+    if (!response.ok) {
+      return { success: false, message: 'Failed to save demo request' };
+    }
+
+    const data = await response.json();
+    return { success: !!data.success, message: data.success ? 'Demo request saved successfully' : 'Failed to save demo request' };
   } catch (error) {
     console.error('Error saving demo request:', error);
     return { success: false, message: 'Failed to save demo request' };

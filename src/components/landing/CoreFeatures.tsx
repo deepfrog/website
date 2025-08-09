@@ -22,8 +22,8 @@ const CoreFeatures: React.FC<CoreFeaturesProps> = ({ coreFeatures }) => {
         <Typography variant="h3" sx={{ textAlign: 'center', fontWeight: 'bold', color: '#111827', mb: 2 }}>
           Our Products & Solutions
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: 'center', color: '#6b7280', mb: 6, maxWidth: 600, mx: 'auto' }}>
-          Comprehensive intelligent solutions designed for healthcare, logistics, and fintech industries
+        <Typography variant="h6" sx={{ textAlign: 'center', color: '#6b7280', mb: 6, maxWidth: 800, mx: 'auto' }}>
+          Built for outcomes: accelerate decisions, automate workflows, and deploy trustworthy AI across logistics, fintech & healthcare.
         </Typography>
         <Box sx={{ 
           display: 'grid', 
