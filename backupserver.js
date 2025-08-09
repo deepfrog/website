@@ -4,6 +4,7 @@ const path = require('path');
 const cors = require('cors');
 
 const app = express();
+const PORT = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
@@ -16,9 +17,8 @@ app.post('/api/save-demo-request', (req, res) => {
       return res.status(400).json({ success: false, message: 'Email is required' });
     }
 
-    // Note: This will only work temporarily in /tmp on Vercel
     const record = `${new Date(timestamp || Date.now()).toISOString()}\t${email}\n`;
-    const dataDir = '/tmp/data';
+    const dataDir = path.join(__dirname, 'data');
     const filePath = path.join(dataDir, 'demo_requests.txt');
 
     if (!fs.existsSync(dataDir)) {
@@ -42,4 +42,8 @@ if (fs.existsSync(buildDir)) {
   });
 }
 
-module.exports = app;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+});
+
+
