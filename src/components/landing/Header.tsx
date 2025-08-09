@@ -38,9 +38,9 @@ const Header: React.FC<HeaderProps> = ({ navigate }) => {
             <Link href="#sectors" sx={{ color: '#374151', textDecoration: 'none', fontWeight: 500 }}>
               Sectors
             </Link>
-            <Link href="#partners" sx={{ color: '#374151', textDecoration: 'none', fontWeight: 500 }}>
+            {/* <Link href="#partners" sx={{ color: '#374151', textDecoration: 'none', fontWeight: 500 }}>
               Partners
-            </Link>
+            </Link> */}
             {/* <Link href="#contact" sx={{ color: '#374151', textDecoration: 'none', fontWeight: 500 }}>
               Contact
             </Link> */}
@@ -121,15 +121,15 @@ const Header: React.FC<HeaderProps> = ({ navigate }) => {
               <Link href="#sectors" sx={{ color: '#374151', textDecoration: 'none', fontWeight: 500, py: 1 }}>
                 Sectors
               </Link>
-              <Link href="#partners" sx={{ color: '#374151', textDecoration: 'none', fontWeight: 500, py: 1 }}>
+              {/* <Link href="#partners" sx={{ color: '#374151', textDecoration: 'none', fontWeight: 500, py: 1 }}>
                 Partners
-              </Link>
+              </Link> */}
               <Link href="#about" sx={{ color: '#374151', textDecoration: 'none', fontWeight: 500, py: 1 }}>
                 About
               </Link>
-              <Link href="#contact" sx={{ color: '#374151', textDecoration: 'none', fontWeight: 500, py: 1 }}>
+              {/* <Link href="#contact" sx={{ color: '#374151', textDecoration: 'none', fontWeight: 500, py: 1 }}>
                 Contact
-              </Link>
+              </Link> */}
               <Button
                 variant="contained"
                 size="small"
