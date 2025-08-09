@@ -13,14 +13,12 @@
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "/server.js"
+        "dest": "server.js"
       },
       {
         "src": "/(.*)",
-        "dest": "/build/$1",
-        "headers": {
-          "Cache-Control": "public, max-age=0, must-revalidate"
-        }
+        "dest": "server.js"
       }
     ]
   }
+  

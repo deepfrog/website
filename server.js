@@ -8,7 +8,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// API endpoint to save demo email requests to a local text file
+app.get("/api/test",(req, res) => res.json({message:"Working"}))
+
+// API endpoint to save demo email requests
 app.post('/api/save-demo-request', (req, res) => {
   try {
     const { email, timestamp } = req.body || {};
@@ -16,7 +18,7 @@ app.post('/api/save-demo-request', (req, res) => {
       return res.status(400).json({ success: false, message: 'Email is required' });
     }
 
-    // Note: This will only work temporarily in /tmp on Vercel
+    // Note: /tmp works only per execution on Vercel
     const record = `${new Date(timestamp || Date.now()).toISOString()}\t${email}\n`;
     const dataDir = '/tmp/data';
     const filePath = path.join(dataDir, 'demo_requests.txt');
@@ -33,13 +35,16 @@ app.post('/api/save-demo-request', (req, res) => {
   }
 });
 
-// Static hosting of CRA build if present
+// Serve React build
 const buildDir = path.join(__dirname, 'build');
 if (fs.existsSync(buildDir)) {
   app.use(express.static(buildDir));
-  app.get('*', (_req, res) => {
+
+  // Catch-all: send React index.html for SPA routes
+  app.get('*', (req, res) => {
     res.sendFile(path.join(buildDir, 'index.html'));
   });
 }
 
+// Export for Vercel
 module.exports = app;
